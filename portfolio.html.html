@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Touitou Bénito</title>
+  <link rel="stylesheet" href="portfoliocss.css" /> 
+</head>
+
+<body>
+
+  <div id="progress-bar"></div>
+
+  <div class="galaxy-background">
+    <canvas id="starfield"></canvas> 
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+    <span>Menu</span>
+  </div>
+
+  <nav class="side-menu">
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#jeu">Mon Jeu C#</a>
+    <a href="#cv">CV</a>
+    <a href="#ressources">Ressources CCF</a>
+    <a href="#localisation">Localisation</a> 
+    <a href="#contact">Me Contacter</a> 
+  </nav>
+
+  <a href="https://github.com/ben747x" class="github-icon" target="_blank">
+    <img src="github.png" alt="Profil GitHub de ben747x">
+  </a>
+
+  <button id="back-to-top" title="Retour en haut de page">
+    ▲
+  </button>
+
+  <header class="hero">
+    <div class="content">
+      
+      <h1><span id="typing-family-name" class="typing-part"></span> <span id="typing-first-name" class="typing-part"></span></h1> 
+      
+      <p class="subtitle">Étudiant BTS SIO – SLAM</p>
+      <p class="subtitle">Lycée Pasteur Mont Roland</p>
+      <p class="description">Développement web, logiciels et technologies.</p>
+
+      <div class="buttons">
+        <a href="#projets" class="btn">Voir mes projets</a>
+        <a href="#contact" class="btn">Me contacter</a> 
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="competences" class="section fade-in">
+      <h2>Compétences</h2>
+
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3>Langages</h3>
+          <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>C#</span>
+            <span>PHP (début)</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Logiciels</h3>
+          <div class="skills">
+            <span>Visual Studio</span>
+            <span>Laragon</span>
+            <span>VS Code</span>
+            <span>VirtualBox</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Outils / Système</h3>
+          <div class="skills">
+            <span>Git / GitHub</span>
+            <span>Windows</span>
+            <span>SQL Server</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets" class="section slide-up">
+      <h2>Projets</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Application Étudiants</h3>
+          <p>Gestion de base de données via C# et SQL Server.</p>
+        </div>
+        <div class="card">
+          <h3>Site Vitrine</h3>
+          <p>Site professionnel codé en HTML/CSS pour un artisan local.</p>
+        </div>
+        <div class="card">
+          <h3>TP Réseau</h3>
+          <p>Simulation de réseau avec VirtualBox.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="jeu" class="section fade-in">
+        <h2>Mon Jeu C# : Trouve ton nombre</h2>
+        <div class="game-info">
+            <p>Ce jeu de console a été développé en C# et permet à l'utilisateur de deviner un nombre aléatoire entre 0 et 100 généré par l'ordinateur.</p>
+            <a href="juste prix c#/juste prix c#.zip" class="btn download-btn">🎮 Télécharger le jeu (EXE)</a> 
+        </div>
+    </section>
+
+    <section id="cv" class="section fade-in">
+      <h2>Mon CV</h2>
+      <a href="cv_benito.pdf.pdf" class="btn" target="_blank">📄 Télécharger le CV (PDF)</a>
+    </section>
+
+    <section id="ressources" class="section fade-in">
+      <h2>Mes ressources CCF</h2>
+      <a href="Mes-ressources-ccf.pdf" class="btn" target="_blank">📄 Télécharger mes ressources CCF</a>
+    </section>
+
+    <section id="localisation" class="section fade-in">
+      <h2>Où me trouver (Mon Lycée)</h2>
+      
+      <div class="map-container">
+        <iframe 
+          src="https://maps.google.com/?cid=1172435795629786718&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Carte de localisation du Lycée Pasteur Mont Roland à Dole"
+        ></iframe>
+      </div>
+      <p class="map-label">55 Bd du Président Wilson, 39100 Dole</p>
+      <a href="https://maps.google.com/?cid=1172435795629786718&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn" style="margin-top: 20px;">Voir sur Google Maps</a>
+    </section>
+    
+    <section id="contact" class="section fade-in">
+        <h2>Me Contacter</h2>
+        <p class="contact-intro">J'étudie les opportunités de stage et de collaboration. N'hésitez pas à me laisser un message ou à me contacter directement.</p>
+
+        <div class="contact-container">
+            <form action="mailto:benitotouitou534@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <input type="text" name="nom" placeholder="Votre Nom et Prénom" required>
+                <input type="email" name="email" placeholder="Votre Email" required>
+                
+                <button type="submit" class="btn">Envoyer le Message (via Email)</button>
+            </form>
+
+            <div class="contact-details">
+                <h3>Contact Direct & Réseaux</h3>
+                <p>📧 Email : <a href="mailto:benitotouitou534@gmail.com">benitotouitou534@gmail.com</a></p>
+                <p>📞 Téléphone : Disponible sur demande.</p>
+                <p>📍 Localisation : Belmont(39380), France</p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/ben747x" target="_blank" class="social-btn github">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>© 2025 Touitou Bénito – Portfolio BTS SIO</p>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById('starfield');
+    const ctx = canvas.getContext('2d');
+    const numStars = 250; 
+    const stars = [];
+
+    function initStars() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        stars.length = 0; 
+        for (let i = 0; i < numStars; i++) {
+            stars.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 1.5 + 0.5, 
+                speed: Math.random() * 0.1 + 0.05, 
+                opacity: Math.random() * 0.5 + 0.5, 
+                color: Math.random() < 0.2 ? 'rgba(79, 195, 247, 1)' : 'white' 
+            });
+        }
+    }
+
+    function drawStars() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        stars.forEach(star => {
+            star.x -= star.speed; 
+            if (star.x < 0) star.x = canvas.width;
+            star.opacity = Math.sin(star.x / 100 + star.y / 100) * 0.2 + 0.8; 
+            ctx.fillStyle = star.color;
+            ctx.globalAlpha = star.opacity;
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+            ctx.fill();
+        });
+        requestAnimationFrame(drawStars);
+    }
+    
+    window.addEventListener('resize', initStars);
+    initStars();
+    drawStars(); 
+
+    const familyNameElement = document.getElementById('typing-family-name');
+    const firstNameElement = document.getElementById('typing-first-name');
+    const familyName = 'Touitou'; 
+    const firstName = 'Bénito';
+    let charIndex = 0;
+    let isTypingFamily = true;
+
+    function typeEffect() {
+        if (isTypingFamily) {
+            if (charIndex < familyName.length) {
+                familyNameElement.textContent += familyName.charAt(charIndex);
+                familyNameElement.classList.add('cursor');
+                charIndex++;
+                setTimeout(typeEffect, 150); 
+            } else {
+                familyNameElement.textContent += ' '; 
+                familyNameElement.classList.remove('cursor');
+                isTypingFamily = false;
+                charIndex = 0;
+                setTimeout(typeEffect, 300); 
+            }
+        } else {
+            if (charIndex < firstName.length) {
+                firstNameElement.textContent += firstName.charAt(charIndex);
+                firstNameElement.classList.add('cursor');
+                charIndex++;
+                setTimeout(typeEffect, 150); 
+            } else {
+                firstNameElement.classList.remove('cursor');
+            }
+        }
+    }
+    
+    const progressBar = document.getElementById('progress-bar');
+    const backToTopButton = document.getElementById('back-to-top');
+    const scrollThreshold = 300; 
+
+    function updateScrollElements() {
+        const totalHeight = document.body.scrollHeight - window.innerHeight;
+        const scrollPosition = window.scrollY;
+        const progress = totalHeight > 0 ? (scrollPosition / totalHeight) * 100 : 100;
+        progressBar.style.width = progress + '%';
+        if (scrollPosition > scrollThreshold) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', updateScrollElements);
+    window.addEventListener('load', updateScrollElements); 
+    backToTopButton.addEventListener('click', scrollToTop);
+
+    window.onload = function() {
+        familyNameElement.textContent = ''; 
+        firstNameElement.textContent = '';
+        typeEffect();
+        updateScrollElements(); 
+    };
+
+    function toggleMenu() {
+      document.querySelector(".side-menu").classList.toggle("open");
+      document.querySelector(".hamburger").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
